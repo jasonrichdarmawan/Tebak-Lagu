@@ -11,7 +11,7 @@ import SwiftUI
 struct Tebak_LaguApp: App {
     var body: some Scene {
         WindowGroup {
-            GameView()
+            ContentView()
         }
     }
 }

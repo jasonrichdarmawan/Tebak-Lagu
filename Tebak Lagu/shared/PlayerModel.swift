@@ -10,5 +10,5 @@ import Foundation
 struct PlayerModel: Identifiable {
     let id: UUID = UUID()
     var name: String
-    var score: Int = 0
+    var score: Double = 0
 }
