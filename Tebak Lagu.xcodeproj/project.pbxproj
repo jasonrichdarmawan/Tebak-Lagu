@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4323571929CC82FA002C26F7 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4323571829CC82FA002C26F7 /* QuestionModel.swift */; };
+		4352731129C9BAD90097C262 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4352731029C9BAD90097C262 /* GameView.swift */; };
 		9646B3C829C8215F00F28330 /* Tebak_LaguApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646B3C729C8215F00F28330 /* Tebak_LaguApp.swift */; };
 		9646B3CA29C8215F00F28330 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646B3C929C8215F00F28330 /* ContentView.swift */; };
 		9646B3CC29C8216100F28330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9646B3CB29C8216100F28330 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4323571829CC82FA002C26F7 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		4352731029C9BAD90097C262 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		9646B3C429C8215F00F28330 /* Tebak Lagu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tebak Lagu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9646B3C729C8215F00F28330 /* Tebak_LaguApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tebak_LaguApp.swift; sourceTree = "<group>"; };
 		9646B3C929C8215F00F28330 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			children = (
 				9646B3C729C8215F00F28330 /* Tebak_LaguApp.swift */,
 				9646B3C929C8215F00F28330 /* ContentView.swift */,
+				4352731029C9BAD90097C262 /* GameView.swift */,
+				4323571829CC82FA002C26F7 /* QuestionModel.swift */,
 				9646B3CB29C8216100F28330 /* Assets.xcassets */,
 				9646B3CD29C8216100F28330 /* Preview Content */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9646B3CA29C8215F00F28330 /* ContentView.swift in Sources */,
+				4352731129C9BAD90097C262 /* GameView.swift in Sources */,
 				9646B3C829C8215F00F28330 /* Tebak_LaguApp.swift in Sources */,
+				4323571929CC82FA002C26F7 /* QuestionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
