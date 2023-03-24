@@ -7,18 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9605648029CD6C7100F3569A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605647F29CD6C7100F3569A /* Color.swift */; };
+		9605648329CD6DF300F3569A /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605648229CD6DF300F3569A /* GameView.swift */; };
+		9605648629CD6FB800F3569A /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605648529CD6FB800F3569A /* SummaryView.swift */; };
+		9605648829CD70BB00F3569A /* RouterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605648729CD70BB00F3569A /* RouterViewModel.swift */; };
+		9605648A29CD760E00F3569A /* PlayersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605648929CD760E00F3569A /* PlayersViewModel.swift */; };
+		9605648D29CD7AF700F3569A /* HowToPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605648C29CD7AF700F3569A /* HowToPlayView.swift */; };
 		9646B3C829C8215F00F28330 /* Tebak_LaguApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646B3C729C8215F00F28330 /* Tebak_LaguApp.swift */; };
 		9646B3CA29C8215F00F28330 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646B3C929C8215F00F28330 /* ContentView.swift */; };
 		9646B3CC29C8216100F28330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9646B3CB29C8216100F28330 /* Assets.xcassets */; };
 		9646B3CF29C8216100F28330 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9646B3CE29C8216100F28330 /* Preview Assets.xcassets */; };
+		9646B3D629C8222900F28330 /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646B3D529C8222900F28330 /* StarterView.swift */; };
+		964C62D929C9BA13008EE78F /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964C62D829C9BA13008EE78F /* PlayerModel.swift */; };
+		964C62E129C9CB7F008EE78F /* PlayerRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964C62E029C9CB7F008EE78F /* PlayerRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9605647F29CD6C7100F3569A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		9605648229CD6DF300F3569A /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		9605648529CD6FB800F3569A /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		9605648729CD70BB00F3569A /* RouterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewModel.swift; sourceTree = "<group>"; };
+		9605648929CD760E00F3569A /* PlayersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewModel.swift; sourceTree = "<group>"; };
+		9605648C29CD7AF700F3569A /* HowToPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayView.swift; sourceTree = "<group>"; };
 		9646B3C429C8215F00F28330 /* Tebak Lagu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tebak Lagu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9646B3C729C8215F00F28330 /* Tebak_LaguApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tebak_LaguApp.swift; sourceTree = "<group>"; };
 		9646B3C929C8215F00F28330 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9646B3CB29C8216100F28330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9646B3CE29C8216100F28330 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9646B3D529C8222900F28330 /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
+		964C62D829C9BA13008EE78F /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		964C62E029C9CB7F008EE78F /* PlayerRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +50,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9605647E29CD6C6500F3569A /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				964C62D829C9BA13008EE78F /* PlayerModel.swift */,
+				9605647F29CD6C7100F3569A /* Color.swift */,
+				9605648729CD70BB00F3569A /* RouterViewModel.swift */,
+				9605648929CD760E00F3569A /* PlayersViewModel.swift */,
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
+		9605648129CD6DE900F3569A /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				9605648229CD6DF300F3569A /* GameView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		9605648429CD6FAB00F3569A /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				9605648529CD6FB800F3569A /* SummaryView.swift */,
+			);
+			path = Summary;
+			sourceTree = "<group>";
+		};
+		9605648B29CD7AEC00F3569A /* HowToPlay */ = {
+			isa = PBXGroup;
+			children = (
+				9605648C29CD7AF700F3569A /* HowToPlayView.swift */,
+			);
+			path = HowToPlay;
+			sourceTree = "<group>";
+		};
 		9646B3BB29C8215F00F28330 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +104,11 @@
 		9646B3C629C8215F00F28330 /* Tebak Lagu */ = {
 			isa = PBXGroup;
 			children = (
+				9605648B29CD7AEC00F3569A /* HowToPlay */,
+				9605648429CD6FAB00F3569A /* Summary */,
+				9605648129CD6DE900F3569A /* Game */,
+				9605647E29CD6C6500F3569A /* shared */,
+				964C62D429C9A7EC008EE78F /* Starter */,
 				9646B3C729C8215F00F28330 /* Tebak_LaguApp.swift */,
 				9646B3C929C8215F00F28330 /* ContentView.swift */,
 				9646B3CB29C8216100F28330 /* Assets.xcassets */,
@@ -65,6 +123,15 @@
 				9646B3CE29C8216100F28330 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		964C62D429C9A7EC008EE78F /* Starter */ = {
+			isa = PBXGroup;
+			children = (
+				9646B3D529C8222900F28330 /* StarterView.swift */,
+				964C62E029C9CB7F008EE78F /* PlayerRowView.swift */,
+			);
+			path = Starter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +204,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				964C62E129C9CB7F008EE78F /* PlayerRowView.swift in Sources */,
+				9605648A29CD760E00F3569A /* PlayersViewModel.swift in Sources */,
+				9605648829CD70BB00F3569A /* RouterViewModel.swift in Sources */,
+				9605648D29CD7AF700F3569A /* HowToPlayView.swift in Sources */,
 				9646B3CA29C8215F00F28330 /* ContentView.swift in Sources */,
 				9646B3C829C8215F00F28330 /* Tebak_LaguApp.swift in Sources */,
+				964C62D929C9BA13008EE78F /* PlayerModel.swift in Sources */,
+				9646B3D629C8222900F28330 /* StarterView.swift in Sources */,
+				9605648629CD6FB800F3569A /* SummaryView.swift in Sources */,
+				9605648029CD6C7100F3569A /* Color.swift in Sources */,
+				9605648329CD6DF300F3569A /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

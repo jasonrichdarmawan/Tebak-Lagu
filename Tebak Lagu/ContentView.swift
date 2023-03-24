@@ -7,15 +7,24 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView: View {    
+    @StateObject private var routerViewModel: RouterViewModel = RouterViewModel()
+    @StateObject private var playerViewModel: PlayersViewModel = PlayersViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            if routerViewModel.currentView == .StarterView {
+                StarterView()
+            } else if routerViewModel.currentView == .HowToPlayView {
+                HowToPlay()
+            } else if routerViewModel.currentView == .GameView {
+                GameView()
+            } else if routerViewModel.currentView == .SummaryView {
+                SummaryView()
+            }
         }
-        .padding()
+        .environmentObject(routerViewModel)
+        .environmentObject(playerViewModel)
     }
 }
 
