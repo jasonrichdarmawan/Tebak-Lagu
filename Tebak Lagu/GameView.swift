@@ -44,9 +44,6 @@ struct GameView: View {
                         
                     }
             }
-            .onChange(of: currentQuestion, perform: { _ in
-                print("CHANGE!")
-            })
             
             .background {
                 RoundedRectangle(cornerRadius: 5)
