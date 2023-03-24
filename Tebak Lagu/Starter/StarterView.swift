@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct StarterView: View {
-    @Binding var players: [PlayerModel]
+    @EnvironmentObject private var routerViewModel: RouterViewModel
+    @EnvironmentObject private var playersViewModel: PlayersViewModel
     
     var body: some View {
         VStack {
@@ -18,16 +19,16 @@ struct StarterView: View {
                 .foregroundColor(.black)
             
             VStack {
-                ForEach(players.indices, id: \.self) { index in
+                ForEach(playersViewModel.players.indices, id: \.self) { index in
                     PlayerRowView(
-                        player: $players[index],
-                        onDelete: {players.remove(at: index)}
+                        player: $playersViewModel.players[index],
+                        onDelete: {playersViewModel.players.remove(at: index)}
                     )
                 }
             }.padding(.horizontal).padding(.bottom)
             
             Button(action: {
-                players.append(PlayerModel(name: ""))
+                playersViewModel.players.append(PlayerModel(name: ""))
             }) {
                 Image(systemName: "plus.circle")
                     .font(.title)
@@ -37,7 +38,7 @@ struct StarterView: View {
             Spacer()
             
             Button(action: {
-                
+                routerViewModel.currentView = .HowToPlayView
             }) {
                 Text("START")
                     .font(.title)
@@ -55,9 +56,10 @@ struct StarterView: View {
 }
 
 struct StarterView_Previews: PreviewProvider {
-    @State static var players: [PlayerModel] = []
+    @StateObject static private var playersViewModel = PlayersViewModel()
     
     static var previews: some View {
-        StarterView(players: $players)
+        StarterView()
+            .environmentObject(playersViewModel)
     }
 }

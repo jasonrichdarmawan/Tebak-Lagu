@@ -7,13 +7,24 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    @State private var players: [PlayerModel] = []
+struct ContentView: View {    
+    @StateObject private var routerViewModel: RouterViewModel = RouterViewModel()
+    @StateObject private var playerViewModel: PlayersViewModel = PlayersViewModel()
     
     var body: some View {
         NavigationView {
-            StarterView(players: $players)
+            if routerViewModel.currentView == .StarterView {
+                StarterView()
+            } else if routerViewModel.currentView == .HowToPlayView {
+                HowToPlay()
+            } else if routerViewModel.currentView == .GameView {
+                GameView()
+            } else if routerViewModel.currentView == .SummaryView {
+                SummaryView()
+            }
         }
+        .environmentObject(routerViewModel)
+        .environmentObject(playerViewModel)
     }
 }
 
