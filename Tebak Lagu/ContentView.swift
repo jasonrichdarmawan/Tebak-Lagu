@@ -2,20 +2,14 @@
 //  ContentView.swift
 //  Tebak Lagu
 //
-//  Created by Jason Rich Darmawan Onggo Putra on 20/03/23.
+//  Created by Nidya Anifa on 24/03/23.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
