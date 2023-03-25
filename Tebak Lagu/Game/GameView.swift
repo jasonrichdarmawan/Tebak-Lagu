@@ -15,7 +15,7 @@ struct GameView: View {
     @State var currentQuestion: Question = questionLists[0]
     @State var gameState: String = "Selecting"
     @State var choiceSelected: (String, Bool)?
-    @State var countDown = 10.0
+    @State var countDown = 20.0
     @State var audioPlayer: AVAudioPlayer!
     
     
@@ -25,6 +25,14 @@ struct GameView: View {
         let url = Bundle.main.path(forResource: filename, ofType: "mp3")
         self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: url!))
             audioPlayer.play()
+    }
+    
+    func selectChoice(indexSelected: Int) {
+        gameState = "Finished"
+        choiceSelected = currentQuestion.choices[indexSelected]
+        if choiceSelected!.1 {
+            playersViewModel.addScoreToPlayer()
+        }
     }
     
     var body: some View {
@@ -39,7 +47,7 @@ struct GameView: View {
                 Text("\(currentQuestion.questionLyrics)")
                     .foregroundColor(Color("PrimaryPurple"))
                     .padding()
-                ProgressView(value: countDown, total: 10)
+                ProgressView(value: countDown, total: 20)
                     .onReceive(timer) { _ in
                         withAnimation {
                             if countDown > 0 && gameState == "Selecting" {
@@ -75,11 +83,28 @@ struct GameView: View {
                             audioPlayer.stop()
                             gameState = "Selecting"
                             choiceSelected = nil
-                            countDown = 10.0
+                            countDown = 20.0
                             
                             playersViewModel.turn += 1
                             currentQuestion = questionLists[playersViewModel.turn]
                             getSongData(filename: "\(currentQuestion.songName) 1")
+                            CoreMotionListener.StartListening(
+                                cameUp: {
+                                    print("cameUp", Int.random(in: 1...100))
+                                    selectChoice(indexSelected: 0)
+                                },
+                                cameDown: {
+                                    print("cameDown", Int.random(in: 1...100))
+                                },
+                                tiltedLeft: {
+                                    print("tiltedLeft", Int.random(in: 1...100))
+                                    selectChoice(indexSelected: 1)
+                                },
+                                tiltedRight: {
+                                    print("tiltedRight", Int.random(in: 1...100))
+                                    selectChoice(indexSelected: 2)
+                                }
+                            )
                         }
                         
                     } label: {
@@ -96,6 +121,7 @@ struct GameView: View {
                     }
                     .onAppear {
                         audioPlayer.stop()
+                        CoreMotionListener.StopListening()
                         getSongData(filename: "\(currentQuestion.songName) 2")
                     }
                 } else {
@@ -124,6 +150,23 @@ struct GameView: View {
         .padding(30)
         .onAppear {
             getSongData(filename: "\(currentQuestion.songName) 1")
+            CoreMotionListener.StartListening(
+                cameUp: {
+                    print("cameUp", Int.random(in: 1...100))
+                    selectChoice(indexSelected: 0)
+                },
+                cameDown: {
+                    print("cameDown", Int.random(in: 1...100))
+                },
+                tiltedLeft: {
+                    print("tiltedLeft", Int.random(in: 1...100))
+                    selectChoice(indexSelected: 1)
+                },
+                tiltedRight: {
+                    print("tiltedRight", Int.random(in: 1...100))
+                    selectChoice(indexSelected: 2)
+                }
+            )
         }
     }
 }
@@ -148,14 +191,14 @@ struct ChoiceCardView: View {
     
     var body: some View {
         Button {
-            withAnimation {
-                gameState = "Finished"
-                choiceSelected = choice
-                if choice.1 {
-                    print(
-                        playersViewModel.addScoreToPlayer())
-                }
-            }
+//            withAnimation {
+//                gameState = "Finished"
+//                choiceSelected = choice
+//                if choice.1 {
+//                    print(
+//                        playersViewModel.addScoreToPlayer())
+//                }
+//            }
         } label: {
             HStack {
                 Text(choice.0)
@@ -180,6 +223,6 @@ struct ChoiceCardView: View {
             }
             .opacity(gameState == "Selecting" ? 1 : choice.1 ? 1 : 0.2)
         }
-        
+        .disabled(true)
     }
 }

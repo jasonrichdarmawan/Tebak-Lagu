@@ -12,5 +12,5 @@ enum Views {
 }
 
 class RouterViewModel: ObservableObject {
-    @Published var currentView: Views = .CoreMotionPreview
+    @Published var currentView: Views = .StarterView
 }

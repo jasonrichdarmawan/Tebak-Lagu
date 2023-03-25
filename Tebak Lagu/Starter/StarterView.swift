@@ -27,13 +27,16 @@ struct StarterView: View {
                 }
             }.padding(.horizontal).padding(.bottom)
             
-            Button(action: {
-                playersViewModel.players.append(PlayerModel())
-            }) {
-                Image(systemName: "plus.circle")
-                    .font(.title)
-                    .foregroundColor(.green)
+            if playersViewModel.players.count < 3 {
+                Button(action: {
+                    playersViewModel.players.append(PlayerModel())
+                }) {
+                    Image(systemName: "plus.circle")
+                        .font(.title)
+                        .foregroundColor(.green)
+                }
             }
+            
             
             Spacer()
             
@@ -51,6 +54,7 @@ struct StarterView: View {
             .buttonStyle(.bordered)
             .cornerRadius(8)
             .padding()
+            .disabled(playersViewModel.players.count < 2)
         }
     }
 }

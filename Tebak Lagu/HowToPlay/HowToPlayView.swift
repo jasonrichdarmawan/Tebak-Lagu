@@ -12,17 +12,76 @@ struct HowToPlay: View {
     
     var body: some View {
         VStack {
-            Text("How To Play View")
-            Button(action: {
-                routerViewModel.currentView = .GameView
-            }) {
-                Text("Go to Game View")
+            Text("How to play?")
+                .font(.largeTitle)
+                .bold()
+                .fontWidth(.expanded)
+                .foregroundColor(Color("PrimaryPurple"))
+            
+            Spacer()
+            
+            VStack(spacing: 10) {
+                
+                HStack {
+                    Text("⬆️")
+                    Text("Lift to pick A")
+                }
+                HStack {
+                    Text("↪️")
+                    Text("Tilt left to pick B")
+                }
+                HStack {
+                    Text("↩️")
+                    Text("Tilt right to pick C")
+                }
+                
+                Divider()
+                HStack {
+                    Text("⌛️")
+                    Text("You got 20 seconds to answer")
+                }
+                
+                HStack {
+                    Text("✅")
+                    Text("Each correct answer = 100 points")
+                }                
             }
-            Button(action: {
-                routerViewModel.currentView = .StarterView
-            }) {
-                Text("Go Back")
+            .padding()
+            .frame(maxWidth: .infinity)
+            .background {
+                RoundedRectangle(cornerRadius: 5)
+                    .fill(Color.white)
+                    .shadow(radius: 5)
+            }
+            Spacer()
+            
+            Button {
+                routerViewModel.currentView = .GameView
+            } label: {
+                Text("START")
+                    .font(.title3)
+                    .bold()
+                    .frame(maxWidth: .infinity)
+                    .foregroundColor(.white)
+                    .padding()
+                    .background {
+                        RoundedRectangle(cornerRadius: 5)
+                            .fill(Color("PrimaryPurple"))
+                            .shadow(radius: 10)
+                    }
             }
         }
+        .padding()
+    }
+}
+
+struct HowToPlay_Previews: PreviewProvider {    
+    @StateObject static private var routerViewModel = RouterViewModel()
+    @StateObject static private var playersViewModel = PlayersViewModel()
+    
+    static var previews: some View {
+        HowToPlay()
+            .environmentObject(routerViewModel)
+            .environmentObject(playersViewModel)
     }
 }
