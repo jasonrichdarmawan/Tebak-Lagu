@@ -18,21 +18,36 @@ struct ScoreView: View {
                 .fontWeight(.bold)
                 .foregroundColor(.purple)
             
-            ForEach(playersViewModel.players.sorted(by: {$0.score > $1.score})
-            , id: \.id, content: { player in
-                HStack {
-                    Group {
-//                        Text("🥇")
-//                        Spacer()
-                        Text("\(player.name)")
-                            .fontWeight(.bold)
-                        Spacer()
-                        Text(String(format: "%.2f" , player.score))
-                            .fontWeight(.bold)
+            ForEach(
+                Array(playersViewModel
+                    .players
+                    .sorted(by: {$0.score > $1.score})
+                    .enumerated()),
+                id: \.element.id,
+                content: {
+                    (index, player) in
+                    HStack {
+                        Group {
+                            if index == 0 {
+                                Text("🥇")
+                            } else if index == 1 {
+                                Text("🥈")
+                            } else if index == 2 {
+                                Text("🥉")
+                            }
+                            
+                            //                        Text("🥇")
+                            //                        Spacer()
+                            Text("\(player.name)")
+                                .fontWeight(.bold)
+                            Spacer()
+                            Text(String(format: "%.2f" , player.score))
+                                .fontWeight(.bold)
+                        }
+                        .padding()
                     }
-                    .padding()
                 }
-            })
+            )
             .foregroundColor(Color("PrimaryPurple"))
             .background(Color(.white))
             .cornerRadius(8)

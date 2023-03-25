@@ -19,19 +19,25 @@ struct HowToPlay: View {
             
             Spacer()
             
-            VStack(spacing: 10) {
+            VStack(alignment: .leading, spacing: 10) {
                 
                 HStack {
-                    Text("⬆️")
-                    Text("Lift to pick A")
+                    Image(systemName: "arrow.turn.right.up")
+                        .font(.largeTitle)
+                        .foregroundColor(Color("PrimaryPurple"))
+                    Text("Lift up phone to choose option A")
                 }
                 HStack {
-                    Text("↪️")
-                    Text("Tilt left to pick B")
+                    Image(systemName: "rotate.left")
+                        .font(.largeTitle)
+                        .foregroundColor(Color("PrimaryPurple"))
+                    Text("Tilt to the left to choose option B")
                 }
                 HStack {
-                    Text("↩️")
-                    Text("Tilt right to pick C")
+                    Image(systemName: "rotate.right")
+                        .font(.largeTitle)
+                        .foregroundColor(Color("PrimaryPurple"))
+                    Text("Tilt to the right to choose option C")
                 }
                 
                 Divider()
@@ -70,6 +76,7 @@ struct HowToPlay: View {
                     }
             }
         }
+        
         .foregroundColor(Color("PrimaryPurple"))
         .padding()
     }

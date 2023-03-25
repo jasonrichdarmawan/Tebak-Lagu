@@ -32,7 +32,9 @@ struct GameView: View {
         choiceSelected = currentQuestion.choices[indexSelected]
         if choiceSelected!.1 {
             playersViewModel.addScoreToPlayer()
+            print(playersViewModel.getCurrentPlayerModel().name)
         }
+        CoreMotionListener.StopListening()
     }
     
     var body: some View {
@@ -68,8 +70,14 @@ struct GameView: View {
             
             
             VStack(spacing: 20) {
-                ForEach(currentQuestion.choices, id: \.0) { choice in
-                    ChoiceCardView(choice: choice, gameState: $gameState, choiceSelected: $choiceSelected)
+                ForEach(Array(currentQuestion.choices.enumerated()), id: \.0) { index, choice in
+                    if index == 0 {
+                        ChoiceCardView(choice: choice, gameState: $gameState, choiceSelected: $choiceSelected, emoji: "arrow.turn.right.up")
+                    } else if index == 1 {
+                        ChoiceCardView(choice: choice, gameState: $gameState, choiceSelected: $choiceSelected, emoji: "rotate.left")
+                    } else if index == 2 {
+                        ChoiceCardView(choice: choice, gameState: $gameState, choiceSelected: $choiceSelected, emoji: "rotate.right")
+                    }
                 }
             }
             
@@ -121,7 +129,6 @@ struct GameView: View {
                     }
                     .onAppear {
                         audioPlayer.stop()
-                        CoreMotionListener.StopListening()
                         getSongData(filename: "\(currentQuestion.songName) 2")
                     }
                 } else {
@@ -188,6 +195,7 @@ struct ChoiceCardView: View {
     @Binding var gameState: String
     @Binding var choiceSelected: (String, Bool)?
     
+    var emoji: String
     
     var body: some View {
         Button {
@@ -218,8 +226,9 @@ struct ChoiceCardView: View {
                             .shadow(radius: 10)
                     }
                 Spacer()
-                Text("👋")
+                Image(systemName: emoji)
                     .font(.largeTitle)
+                    .foregroundColor(Color("PrimaryPurple"))
             }
             .opacity(gameState == "Selecting" ? 1 : choice.1 ? 1 : 0.2)
         }
