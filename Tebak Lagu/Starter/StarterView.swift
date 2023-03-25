@@ -56,10 +56,12 @@ struct StarterView: View {
 }
 
 struct StarterView_Previews: PreviewProvider {
+    @StateObject static private var routerViewModel = RouterViewModel()
     @StateObject static private var playersViewModel = PlayersViewModel()
     
     static var previews: some View {
         StarterView()
+            .environmentObject(routerViewModel)
             .environmentObject(playersViewModel)
     }
 }

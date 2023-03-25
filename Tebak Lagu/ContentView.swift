@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreMotion
 
 struct ContentView: View {    
     @StateObject private var routerViewModel: RouterViewModel = RouterViewModel()
@@ -19,6 +20,8 @@ struct ContentView: View {
                 HowToPlay()
             } else if routerViewModel.currentView == .GameView {
                 GameView()
+            } else if routerViewModel.currentView == .CoreMotionPreview {
+                CoreMotionPreview()
             } else if routerViewModel.currentView == .ScoreView {
                 ScoreView()
             }
