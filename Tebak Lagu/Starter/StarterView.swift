@@ -16,7 +16,8 @@ struct StarterView: View {
             Text("Add Player")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-                .foregroundColor(.black)
+                .fontWidth(.expanded)
+                .foregroundColor(Color("PrimaryPurple"))
             
             VStack {
                 ForEach(playersViewModel.players.indices, id: \.self) { index in

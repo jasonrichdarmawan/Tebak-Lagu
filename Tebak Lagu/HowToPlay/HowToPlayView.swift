@@ -16,7 +16,6 @@ struct HowToPlay: View {
                 .font(.largeTitle)
                 .bold()
                 .fontWidth(.expanded)
-                .foregroundColor(Color("PrimaryPurple"))
             
             Spacer()
             
@@ -71,6 +70,7 @@ struct HowToPlay: View {
                     }
             }
         }
+        .foregroundColor(Color("PrimaryPurple"))
         .padding()
     }
 }
