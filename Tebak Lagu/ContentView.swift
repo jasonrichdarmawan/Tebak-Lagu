@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Tebak Lagu
 //
-//  Created by Jason Rich Darmawan Onggo Putra on 20/03/23.
+//  Created by Nidya Anifa on 24/03/23.
 //
 
 import SwiftUI
@@ -20,10 +20,10 @@ struct ContentView: View {
                 HowToPlay()
             } else if routerViewModel.currentView == .GameView {
                 GameView()
-            } else if routerViewModel.currentView == .SummaryView {
-                SummaryView()
             } else if routerViewModel.currentView == .CoreMotionPreview {
                 CoreMotionPreview()
+            } else if routerViewModel.currentView == .ScoreView {
+                ScoreView()
             }
         }
         .environmentObject(routerViewModel)
