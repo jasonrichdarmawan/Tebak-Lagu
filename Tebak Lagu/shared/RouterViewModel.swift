@@ -8,9 +8,9 @@
 import SwiftUI
 
 enum Views {
-    case StarterView, HowToPlayView, GameView, SummaryView
+    case StarterView, HowToPlayView, GameView, SummaryView, CoreMotionPreview
 }
 
 class RouterViewModel: ObservableObject {
-    @Published var currentView: Views = .StarterView
+    @Published var currentView: Views = .CoreMotionPreview
 }

@@ -13,6 +13,10 @@
 		9605648829CD70BB00F3569A /* RouterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605648729CD70BB00F3569A /* RouterViewModel.swift */; };
 		9605648A29CD760E00F3569A /* PlayersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605648929CD760E00F3569A /* PlayersViewModel.swift */; };
 		9605648D29CD7AF700F3569A /* HowToPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605648C29CD7AF700F3569A /* HowToPlayView.swift */; };
+		9605649729CE845500F3569A /* CoreMotionListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605649629CE845500F3569A /* CoreMotionListener.swift */; };
+		9605649929CE960300F3569A /* MotionManagerListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605649829CE960300F3569A /* MotionManagerListener.swift */; };
+		9605649B29CE96B300F3569A /* AltimeterListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605649A29CE96B300F3569A /* AltimeterListener.swift */; };
+		9605649D29CE98CE00F3569A /* CoreMotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605649C29CE98CE00F3569A /* CoreMotionView.swift */; };
 		9646B3C829C8215F00F28330 /* Tebak_LaguApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646B3C729C8215F00F28330 /* Tebak_LaguApp.swift */; };
 		9646B3CA29C8215F00F28330 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646B3C929C8215F00F28330 /* ContentView.swift */; };
 		9646B3CC29C8216100F28330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9646B3CB29C8216100F28330 /* Assets.xcassets */; };
@@ -29,6 +33,10 @@
 		9605648729CD70BB00F3569A /* RouterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewModel.swift; sourceTree = "<group>"; };
 		9605648929CD760E00F3569A /* PlayersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewModel.swift; sourceTree = "<group>"; };
 		9605648C29CD7AF700F3569A /* HowToPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayView.swift; sourceTree = "<group>"; };
+		9605649629CE845500F3569A /* CoreMotionListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionListener.swift; sourceTree = "<group>"; };
+		9605649829CE960300F3569A /* MotionManagerListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManagerListener.swift; sourceTree = "<group>"; };
+		9605649A29CE96B300F3569A /* AltimeterListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltimeterListener.swift; sourceTree = "<group>"; };
+		9605649C29CE98CE00F3569A /* CoreMotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionView.swift; sourceTree = "<group>"; };
 		9646B3C429C8215F00F28330 /* Tebak Lagu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tebak Lagu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9646B3C729C8215F00F28330 /* Tebak_LaguApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tebak_LaguApp.swift; sourceTree = "<group>"; };
 		9646B3C929C8215F00F28330 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +93,17 @@
 			path = HowToPlay;
 			sourceTree = "<group>";
 		};
+		9605649529CE844900F3569A /* CoreMotion */ = {
+			isa = PBXGroup;
+			children = (
+				9605649629CE845500F3569A /* CoreMotionListener.swift */,
+				9605649829CE960300F3569A /* MotionManagerListener.swift */,
+				9605649A29CE96B300F3569A /* AltimeterListener.swift */,
+				9605649C29CE98CE00F3569A /* CoreMotionView.swift */,
+			);
+			path = CoreMotion;
+			sourceTree = "<group>";
+		};
 		9646B3BB29C8215F00F28330 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +123,7 @@
 		9646B3C629C8215F00F28330 /* Tebak Lagu */ = {
 			isa = PBXGroup;
 			children = (
+				9605649529CE844900F3569A /* CoreMotion */,
 				9605648B29CD7AEC00F3569A /* HowToPlay */,
 				9605648429CD6FAB00F3569A /* Summary */,
 				9605648129CD6DE900F3569A /* Game */,
@@ -213,8 +233,12 @@
 				964C62D929C9BA13008EE78F /* PlayerModel.swift in Sources */,
 				9646B3D629C8222900F28330 /* StarterView.swift in Sources */,
 				9605648629CD6FB800F3569A /* SummaryView.swift in Sources */,
+				9605649929CE960300F3569A /* MotionManagerListener.swift in Sources */,
+				9605649D29CE98CE00F3569A /* CoreMotionView.swift in Sources */,
 				9605648029CD6C7100F3569A /* Color.swift in Sources */,
 				9605648329CD6DF300F3569A /* GameView.swift in Sources */,
+				9605649729CE845500F3569A /* CoreMotionListener.swift in Sources */,
+				9605649B29CE96B300F3569A /* AltimeterListener.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

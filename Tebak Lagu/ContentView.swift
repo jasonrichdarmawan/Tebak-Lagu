@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreMotion
 
 struct ContentView: View {    
     @StateObject private var routerViewModel: RouterViewModel = RouterViewModel()
@@ -21,6 +22,8 @@ struct ContentView: View {
                 GameView()
             } else if routerViewModel.currentView == .SummaryView {
                 SummaryView()
+            } else if routerViewModel.currentView == .CoreMotionPreview {
+                CoreMotionPreview()
             }
         }
         .environmentObject(routerViewModel)
