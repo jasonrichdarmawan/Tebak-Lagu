@@ -7,12 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4323571929CC82FA002C26F7 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4323571829CC82FA002C26F7 /* QuestionModel.swift */; };
+		4323571C29CD9E74002C26F7 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4323571B29CD9E74002C26F7 /* ScoreView.swift */; };
+		43398DE629CEB46100A760A1 /* sial cut 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43398DD429CEB46000A760A1 /* sial cut 1.mp3 */; };
+		43398DE829CEB46100A760A1 /* kill bill cut 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43398DD629CEB46000A760A1 /* kill bill cut 2.mp3 */; };
+		43398DE929CEB46100A760A1 /* asmalibrasi cut 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43398DD729CEB46000A760A1 /* asmalibrasi cut 2.mp3 */; };
+		43398DEA29CEB46100A760A1 /* money cut 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43398DD829CEB46000A760A1 /* money cut 2.mp3 */; };
+		43398DEB29CEB46100A760A1 /* sial cut 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43398DD929CEB46000A760A1 /* sial cut 2.mp3 */; };
+		43398DEC29CEB46100A760A1 /* perahu kertas cut 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43398DDA29CEB46000A760A1 /* perahu kertas cut 1.mp3 */; };
+		43398DED29CEB46100A760A1 /* money cut 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43398DDB29CEB46000A760A1 /* money cut 1.mp3 */; };
+		43398DEE29CEB46100A760A1 /* komang cut 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43398DDC29CEB46000A760A1 /* komang cut 1.mp3 */; };
+		43398DEF29CEB46100A760A1 /* butter cut 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43398DDD29CEB46100A760A1 /* butter cut 2.mp3 */; };
+		43398DF029CEB46100A760A1 /* komang cut 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43398DDE29CEB46100A760A1 /* komang cut 2.mp3 */; };
+		43398DF129CEB46100A760A1 /* asmalibrasi cut 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43398DDF29CEB46100A760A1 /* asmalibrasi cut 1.mp3 */; };
+		43398DF229CEB46100A760A1 /* limbo cut 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43398DE029CEB46100A760A1 /* limbo cut 2.mp3 */; };
+		43398DF329CEB46100A760A1 /* perahu kertas cut 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43398DE129CEB46100A760A1 /* perahu kertas cut 2.mp3 */; };
+		43398DF429CEB46100A760A1 /* kill bill cut 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43398DE229CEB46100A760A1 /* kill bill cut 1.mp3 */; };
+		43398DF629CEB46100A760A1 /* butter cut 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43398DE429CEB46100A760A1 /* butter cut 1.mp3 */; };
+		43398DF729CEB46100A760A1 /* limbo cut 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43398DE529CEB46100A760A1 /* limbo cut 1.mp3 */; };
+		43398DFA29CEC6DF00A760A1 /* flowers cut 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43398DF829CEC6DE00A760A1 /* flowers cut 1.mp3 */; };
+		43398DFB29CEC6DF00A760A1 /* flowers cut 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43398DF929CEC6DF00A760A1 /* flowers cut 2.mp3 */; };
+		4352731129C9BAD90097C262 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4352731029C9BAD90097C262 /* GameView.swift */; };
 		9605648029CD6C7100F3569A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605647F29CD6C7100F3569A /* Color.swift */; };
-		9605648329CD6DF300F3569A /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605648229CD6DF300F3569A /* GameView.swift */; };
 		9605648629CD6FB800F3569A /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605648529CD6FB800F3569A /* SummaryView.swift */; };
 		9605648829CD70BB00F3569A /* RouterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605648729CD70BB00F3569A /* RouterViewModel.swift */; };
 		9605648A29CD760E00F3569A /* PlayersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605648929CD760E00F3569A /* PlayersViewModel.swift */; };
 		9605648D29CD7AF700F3569A /* HowToPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605648C29CD7AF700F3569A /* HowToPlayView.swift */; };
+		9605649729CE845500F3569A /* CoreMotionListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605649629CE845500F3569A /* CoreMotionListener.swift */; };
+		9605649929CE960300F3569A /* MotionManagerListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605649829CE960300F3569A /* MotionManagerListener.swift */; };
+		9605649B29CE96B300F3569A /* AltimeterListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605649A29CE96B300F3569A /* AltimeterListener.swift */; };
+		9605649D29CE98CE00F3569A /* CoreMotionPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605649C29CE98CE00F3569A /* CoreMotionPreview.swift */; };
 		9646B3C829C8215F00F28330 /* Tebak_LaguApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646B3C729C8215F00F28330 /* Tebak_LaguApp.swift */; };
 		9646B3CA29C8215F00F28330 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646B3C929C8215F00F28330 /* ContentView.swift */; };
 		9646B3CC29C8216100F28330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9646B3CB29C8216100F28330 /* Assets.xcassets */; };
@@ -23,12 +47,36 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4323571829CC82FA002C26F7 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		4323571B29CD9E74002C26F7 /* ScoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		43398DD429CEB46000A760A1 /* sial cut 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sial cut 1.mp3"; sourceTree = "<group>"; };
+		43398DD629CEB46000A760A1 /* kill bill cut 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "kill bill cut 2.mp3"; sourceTree = "<group>"; };
+		43398DD729CEB46000A760A1 /* asmalibrasi cut 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "asmalibrasi cut 2.mp3"; sourceTree = "<group>"; };
+		43398DD829CEB46000A760A1 /* money cut 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "money cut 2.mp3"; sourceTree = "<group>"; };
+		43398DD929CEB46000A760A1 /* sial cut 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sial cut 2.mp3"; sourceTree = "<group>"; };
+		43398DDA29CEB46000A760A1 /* perahu kertas cut 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "perahu kertas cut 1.mp3"; sourceTree = "<group>"; };
+		43398DDB29CEB46000A760A1 /* money cut 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "money cut 1.mp3"; sourceTree = "<group>"; };
+		43398DDC29CEB46000A760A1 /* komang cut 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "komang cut 1.mp3"; sourceTree = "<group>"; };
+		43398DDD29CEB46100A760A1 /* butter cut 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "butter cut 2.mp3"; sourceTree = "<group>"; };
+		43398DDE29CEB46100A760A1 /* komang cut 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "komang cut 2.mp3"; sourceTree = "<group>"; };
+		43398DDF29CEB46100A760A1 /* asmalibrasi cut 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "asmalibrasi cut 1.mp3"; sourceTree = "<group>"; };
+		43398DE029CEB46100A760A1 /* limbo cut 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "limbo cut 2.mp3"; sourceTree = "<group>"; };
+		43398DE129CEB46100A760A1 /* perahu kertas cut 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "perahu kertas cut 2.mp3"; sourceTree = "<group>"; };
+		43398DE229CEB46100A760A1 /* kill bill cut 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "kill bill cut 1.mp3"; sourceTree = "<group>"; };
+		43398DE429CEB46100A760A1 /* butter cut 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "butter cut 1.mp3"; sourceTree = "<group>"; };
+		43398DE529CEB46100A760A1 /* limbo cut 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "limbo cut 1.mp3"; sourceTree = "<group>"; };
+		43398DF829CEC6DE00A760A1 /* flowers cut 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "flowers cut 1.mp3"; sourceTree = "<group>"; };
+		43398DF929CEC6DF00A760A1 /* flowers cut 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "flowers cut 2.mp3"; sourceTree = "<group>"; };
+		4352731029C9BAD90097C262 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		9605647F29CD6C7100F3569A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		9605648229CD6DF300F3569A /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		9605648529CD6FB800F3569A /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 		9605648729CD70BB00F3569A /* RouterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewModel.swift; sourceTree = "<group>"; };
 		9605648929CD760E00F3569A /* PlayersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewModel.swift; sourceTree = "<group>"; };
 		9605648C29CD7AF700F3569A /* HowToPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayView.swift; sourceTree = "<group>"; };
+		9605649629CE845500F3569A /* CoreMotionListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionListener.swift; sourceTree = "<group>"; };
+		9605649829CE960300F3569A /* MotionManagerListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManagerListener.swift; sourceTree = "<group>"; };
+		9605649A29CE96B300F3569A /* AltimeterListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltimeterListener.swift; sourceTree = "<group>"; };
+		9605649C29CE98CE00F3569A /* CoreMotionPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionPreview.swift; sourceTree = "<group>"; };
 		9646B3C429C8215F00F28330 /* Tebak Lagu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tebak Lagu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9646B3C729C8215F00F28330 /* Tebak_LaguApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tebak_LaguApp.swift; sourceTree = "<group>"; };
 		9646B3C929C8215F00F28330 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,10 +98,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4323571A29CD9E45002C26F7 /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				4323571B29CD9E74002C26F7 /* ScoreView.swift */,
+			);
+			path = Score;
+			sourceTree = "<group>";
+		};
+		43398DD329CEB41000A760A1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				43398DDF29CEB46100A760A1 /* asmalibrasi cut 1.mp3 */,
+				43398DD729CEB46000A760A1 /* asmalibrasi cut 2.mp3 */,
+				43398DE429CEB46100A760A1 /* butter cut 1.mp3 */,
+				43398DF829CEC6DE00A760A1 /* flowers cut 1.mp3 */,
+				43398DF929CEC6DF00A760A1 /* flowers cut 2.mp3 */,
+				43398DDD29CEB46100A760A1 /* butter cut 2.mp3 */,
+				43398DE229CEB46100A760A1 /* kill bill cut 1.mp3 */,
+				43398DD629CEB46000A760A1 /* kill bill cut 2.mp3 */,
+				43398DDC29CEB46000A760A1 /* komang cut 1.mp3 */,
+				43398DDE29CEB46100A760A1 /* komang cut 2.mp3 */,
+				43398DE529CEB46100A760A1 /* limbo cut 1.mp3 */,
+				43398DE029CEB46100A760A1 /* limbo cut 2.mp3 */,
+				43398DDB29CEB46000A760A1 /* money cut 1.mp3 */,
+				43398DD829CEB46000A760A1 /* money cut 2.mp3 */,
+				43398DDA29CEB46000A760A1 /* perahu kertas cut 1.mp3 */,
+				43398DE129CEB46100A760A1 /* perahu kertas cut 2.mp3 */,
+				43398DD429CEB46000A760A1 /* sial cut 1.mp3 */,
+				43398DD929CEB46000A760A1 /* sial cut 2.mp3 */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		9605647E29CD6C6500F3569A /* shared */ = {
 			isa = PBXGroup;
 			children = (
 				964C62D829C9BA13008EE78F /* PlayerModel.swift */,
+				4323571829CC82FA002C26F7 /* QuestionModel.swift */,
 				9605647F29CD6C7100F3569A /* Color.swift */,
 				9605648729CD70BB00F3569A /* RouterViewModel.swift */,
 				9605648929CD760E00F3569A /* PlayersViewModel.swift */,
@@ -64,7 +146,7 @@
 		9605648129CD6DE900F3569A /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				9605648229CD6DF300F3569A /* GameView.swift */,
+				4352731029C9BAD90097C262 /* GameView.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -83,6 +165,17 @@
 				9605648C29CD7AF700F3569A /* HowToPlayView.swift */,
 			);
 			path = HowToPlay;
+			sourceTree = "<group>";
+		};
+		9605649529CE844900F3569A /* CoreMotion */ = {
+			isa = PBXGroup;
+			children = (
+				9605649629CE845500F3569A /* CoreMotionListener.swift */,
+				9605649829CE960300F3569A /* MotionManagerListener.swift */,
+				9605649A29CE96B300F3569A /* AltimeterListener.swift */,
+				9605649C29CE98CE00F3569A /* CoreMotionPreview.swift */,
+			);
+			path = CoreMotion;
 			sourceTree = "<group>";
 		};
 		9646B3BB29C8215F00F28330 = {
@@ -104,6 +197,9 @@
 		9646B3C629C8215F00F28330 /* Tebak Lagu */ = {
 			isa = PBXGroup;
 			children = (
+				9605649529CE844900F3569A /* CoreMotion */,
+				43398DD329CEB41000A760A1 /* Assets */,
+				4323571A29CD9E45002C26F7 /* Score */,
 				9605648B29CD7AEC00F3569A /* HowToPlay */,
 				9605648429CD6FAB00F3569A /* Summary */,
 				9605648129CD6DE900F3569A /* Game */,
@@ -192,8 +288,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43398DE629CEB46100A760A1 /* sial cut 1.mp3 in Resources */,
+				43398DF029CEB46100A760A1 /* komang cut 2.mp3 in Resources */,
+				43398DF329CEB46100A760A1 /* perahu kertas cut 2.mp3 in Resources */,
 				9646B3CF29C8216100F28330 /* Preview Assets.xcassets in Resources */,
+				43398DE829CEB46100A760A1 /* kill bill cut 2.mp3 in Resources */,
+				43398DF729CEB46100A760A1 /* limbo cut 1.mp3 in Resources */,
+				43398DF229CEB46100A760A1 /* limbo cut 2.mp3 in Resources */,
+				43398DEC29CEB46100A760A1 /* perahu kertas cut 1.mp3 in Resources */,
+				43398DEB29CEB46100A760A1 /* sial cut 2.mp3 in Resources */,
+				43398DE929CEB46100A760A1 /* asmalibrasi cut 2.mp3 in Resources */,
+				43398DEF29CEB46100A760A1 /* butter cut 2.mp3 in Resources */,
+				43398DFB29CEC6DF00A760A1 /* flowers cut 2.mp3 in Resources */,
+				43398DF429CEB46100A760A1 /* kill bill cut 1.mp3 in Resources */,
+				43398DF129CEB46100A760A1 /* asmalibrasi cut 1.mp3 in Resources */,
+				43398DEE29CEB46100A760A1 /* komang cut 1.mp3 in Resources */,
 				9646B3CC29C8216100F28330 /* Assets.xcassets in Resources */,
+				43398DF629CEB46100A760A1 /* butter cut 1.mp3 in Resources */,
+				43398DFA29CEC6DF00A760A1 /* flowers cut 1.mp3 in Resources */,
+				43398DED29CEB46100A760A1 /* money cut 1.mp3 in Resources */,
+				43398DEA29CEB46100A760A1 /* money cut 2.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,17 +318,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4323571C29CD9E74002C26F7 /* ScoreView.swift in Sources */,
 				964C62E129C9CB7F008EE78F /* PlayerRowView.swift in Sources */,
 				9605648A29CD760E00F3569A /* PlayersViewModel.swift in Sources */,
 				9605648829CD70BB00F3569A /* RouterViewModel.swift in Sources */,
 				9605648D29CD7AF700F3569A /* HowToPlayView.swift in Sources */,
 				9646B3CA29C8215F00F28330 /* ContentView.swift in Sources */,
+				4352731129C9BAD90097C262 /* GameView.swift in Sources */,
 				9646B3C829C8215F00F28330 /* Tebak_LaguApp.swift in Sources */,
 				964C62D929C9BA13008EE78F /* PlayerModel.swift in Sources */,
 				9646B3D629C8222900F28330 /* StarterView.swift in Sources */,
 				9605648629CD6FB800F3569A /* SummaryView.swift in Sources */,
+				9605649929CE960300F3569A /* MotionManagerListener.swift in Sources */,
+				9605649D29CE98CE00F3569A /* CoreMotionPreview.swift in Sources */,
 				9605648029CD6C7100F3569A /* Color.swift in Sources */,
 				9605648329CD6DF300F3569A /* GameView.swift in Sources */,
+				9605649729CE845500F3569A /* CoreMotionListener.swift in Sources */,
+				9605649B29CE96B300F3569A /* AltimeterListener.swift in Sources */,
+				4323571929CC82FA002C26F7 /* QuestionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,7 +16,8 @@ struct StarterView: View {
             Text("Add Player")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-                .foregroundColor(.black)
+                .fontWidth(.expanded)
+                .foregroundColor(Color("PrimaryPurple"))
             
             VStack {
                 ForEach(playersViewModel.players.indices, id: \.self) { index in
@@ -27,13 +28,16 @@ struct StarterView: View {
                 }
             }.padding(.horizontal).padding(.bottom)
             
-            Button(action: {
-                playersViewModel.players.append(PlayerModel(name: ""))
-            }) {
-                Image(systemName: "plus.circle")
-                    .font(.title)
-                    .foregroundColor(.green)
+            if playersViewModel.players.count < 3 {
+                Button(action: {
+                    playersViewModel.players.append(PlayerModel())
+                }) {
+                    Image(systemName: "plus.circle")
+                        .font(.title)
+                        .foregroundColor(.green)
+                }
             }
+            
             
             Spacer()
             
@@ -51,15 +55,18 @@ struct StarterView: View {
             .buttonStyle(.bordered)
             .cornerRadius(8)
             .padding()
+            .disabled(playersViewModel.players.count < 2)
         }
     }
 }
 
 struct StarterView_Previews: PreviewProvider {
+    @StateObject static private var routerViewModel = RouterViewModel()
     @StateObject static private var playersViewModel = PlayersViewModel()
     
     static var previews: some View {
         StarterView()
+            .environmentObject(routerViewModel)
             .environmentObject(playersViewModel)
     }
 }
