@@ -225,6 +225,7 @@ struct ChoiceCardView: View {
                             )
                             .shadow(radius: 10)
                     }
+                    .fixedSize(horizontal: false, vertical: true)
                 Spacer()
                 Image(systemName: emoji)
                     .font(.largeTitle)
