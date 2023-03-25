@@ -19,8 +19,8 @@ struct ContentView: View {
                 HowToPlay()
             } else if routerViewModel.currentView == .GameView {
                 GameView()
-            } else if routerViewModel.currentView == .SummaryView {
-                SummaryView()
+            } else if routerViewModel.currentView == .ScoreView {
+                ScoreView()
             }
         }
         .environmentObject(routerViewModel)

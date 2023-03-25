@@ -28,7 +28,7 @@ struct StarterView: View {
             }.padding(.horizontal).padding(.bottom)
             
             Button(action: {
-                playersViewModel.players.append(PlayerModel(name: ""))
+                playersViewModel.players.append(PlayerModel())
             }) {
                 Image(systemName: "plus.circle")
                     .font(.title)

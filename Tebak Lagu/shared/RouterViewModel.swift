@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum Views {
-    case StarterView, HowToPlayView, GameView, SummaryView
+    case StarterView, HowToPlayView, GameView, ScoreView
 }
 
 class RouterViewModel: ObservableObject {

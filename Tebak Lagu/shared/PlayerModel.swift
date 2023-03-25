@@ -7,8 +7,12 @@
 
 import Foundation
 
-struct PlayerModel: Identifiable {
+class PlayerModel: Identifiable {
     let id: UUID = UUID()
-    var name: String
+    var name: String = ""
     var score: Double = 0
+    
+    func addScore(scoreAdded: Double) {
+        score += scoreAdded
+    }
 }

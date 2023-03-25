@@ -31,4 +31,8 @@ class PlayersViewModel: ObservableObject {
             return nil
         }
     }
+    
+    func addScoreToPlayer() {
+        getCurrentPlayerModel().addScore(scoreAdded: 100)
+    }
 }

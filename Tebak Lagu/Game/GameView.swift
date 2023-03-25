@@ -12,14 +12,20 @@ struct GameView: View {
     @EnvironmentObject private var routerViewModel: RouterViewModel
     @EnvironmentObject private var playersViewModel: PlayersViewModel
     
-    @State var currentQuestion: Question = questionLists[Int.random(in: 0..<(questionLists.count))]
+    @State var currentQuestion: Question = questionLists[0]
     @State var gameState: String = "Selecting"
     @State var choiceSelected: (String, Bool)?
     @State var countDown = 10.0
     @State var audioPlayer: AVAudioPlayer!
-
+    
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
+    func getSongData(filename: String) {
+        let url = Bundle.main.path(forResource: filename, ofType: "mp3")
+        self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: url!))
+            audioPlayer.play()
+    }
     
     var body: some View {
         VStack(spacing: 20) {
@@ -66,12 +72,14 @@ struct GameView: View {
                     
                     Button {
                         withAnimation {
-                            currentQuestion = questionLists[Int.random(in: 0..<(questionLists.count))]
+                            audioPlayer.stop()
                             gameState = "Selecting"
                             choiceSelected = nil
                             countDown = 10.0
                             
                             playersViewModel.turn += 1
+                            currentQuestion = questionLists[playersViewModel.turn]
+                            getSongData(filename: "\(currentQuestion.songName) 1")
                         }
                         
                     } label: {
@@ -86,11 +94,15 @@ struct GameView: View {
                                     .shadow(radius: 10)
                             }
                     }
+                    .onAppear {
+                        audioPlayer.stop()
+                        getSongData(filename: "\(currentQuestion.songName) 2")
+                    }
                 } else {
                     Button {
                         withAnimation {
                             playersViewModel.turn = 0
-                            routerViewModel.currentView = .SummaryView
+                            routerViewModel.currentView = .ScoreView
                         }
                         
                     } label: {
@@ -106,23 +118,29 @@ struct GameView: View {
                             }
                     }
                 }
-
+                
             }
         }
         .padding(30)
+        .onAppear {
+            getSongData(filename: "\(currentQuestion.songName) 1")
+        }
     }
 }
 
 struct GameView_Previews: PreviewProvider {
     @StateObject static private var playersViewModel = PlayersViewModel()
+    @StateObject static private var routerViewModel = RouterViewModel()
     
     static var previews: some View {
         GameView()
-            .environmentObject(playersViewModel)
+        
     }
 }
 
 struct ChoiceCardView: View {
+    @EnvironmentObject private var playersViewModel: PlayersViewModel
+    
     var choice: (String, Bool)
     @Binding var gameState: String
     @Binding var choiceSelected: (String, Bool)?
@@ -133,6 +151,10 @@ struct ChoiceCardView: View {
             withAnimation {
                 gameState = "Finished"
                 choiceSelected = choice
+                if choice.1 {
+                    print(
+                        playersViewModel.addScoreToPlayer())
+                }
             }
         } label: {
             HStack {
