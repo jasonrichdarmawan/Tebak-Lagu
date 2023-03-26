@@ -82,7 +82,7 @@ var questionLists: [Question] = [
                 ("Dengan radarku menemukanmu", true),
                 ("Dengan kabarku menemukanmu", false)
              ],
-             songName: "asmalibrasi cut"),
+             songName: "perahu kertas cut"),
     
     Question(questionLyrics: """
                 Sebab kau terlalu indah dari sekedar kata
