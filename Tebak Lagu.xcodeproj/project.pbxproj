@@ -332,7 +332,6 @@
 				9605649929CE960300F3569A /* MotionManagerListener.swift in Sources */,
 				9605649D29CE98CE00F3569A /* CoreMotionPreview.swift in Sources */,
 				9605648029CD6C7100F3569A /* Color.swift in Sources */,
-				9605648329CD6DF300F3569A /* GameView.swift in Sources */,
 				9605649729CE845500F3569A /* CoreMotionListener.swift in Sources */,
 				9605649B29CE96B300F3569A /* AltimeterListener.swift in Sources */,
 				4323571929CC82FA002C26F7 /* QuestionModel.swift in Sources */,
@@ -476,7 +475,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "group9.Tebak-Lagu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -505,7 +504,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "group9.Tebak-Lagu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
